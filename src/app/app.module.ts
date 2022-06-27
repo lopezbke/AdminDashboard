@@ -10,6 +10,9 @@ import { ViewAllUsersComponent } from './view-all-users/view-all-users.component
 import { ErrorComponentComponent } from './error-component/error-component.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserManagementComponent } from './user-management/user-management.component';
+import { ManageUserComponent } from './manage-user/manage-user.component';
+import { AddNewUserComponent } from './add-new-user/add-new-user.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -19,12 +22,15 @@ import { UserManagementComponent } from './user-management/user-management.compo
     NavigationMenuBottomComponent,
     ViewAllUsersComponent,
     ErrorComponentComponent,
-    UserManagementComponent
+    UserManagementComponent,
+    ManageUserComponent,
+    AddNewUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

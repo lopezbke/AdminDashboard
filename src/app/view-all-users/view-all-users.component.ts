@@ -18,9 +18,11 @@ export class ViewAllUsersComponent implements OnInit {
       this.users = response;
       console.log(response);
     })
-    // TODO: This is bad replace
-    const footer = document.getElementById('footer')!;
-    footer.classList.remove('is-hidden');
+    document.getElementById("viewAllUserBtn")?.classList.add("is-active");
   }
 
+  ngOnDestroy():void {
+    document.getElementById("viewAllUserBtn")?.classList.remove("is-active");
+  }
+  
 }
