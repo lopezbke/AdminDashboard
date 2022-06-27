@@ -8,7 +8,13 @@ import { ViewAllUsersComponent } from './view-all-users/view-all-users.component
 const routes: Routes = [
   {path: '', component: UserManagementComponent},
   {path: 'login', component: LoginComponent},
-  {path: 'UserManagement', component: UserManagementComponent},
+  {
+    path: 'UserManagement', component: UserManagementComponent,
+    children: [
+      {path: '', component: ViewAllUsersComponent},
+      {path: 'ViewAllUsers', component: ViewAllUsersComponent}
+    ],
+  },
   {path: '**', component: ErrorComponentComponent}
 ];
 
