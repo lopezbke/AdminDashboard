@@ -12,7 +12,25 @@
                         UserName
                     </th>
                     <th>
+                        Firstname
+                    </th>
+                    <th>
                         Email
+                    </th>
+                    <th>
+                        Address
+                    </th>
+                    <th>
+                        City
+                    </th>
+                    <th>
+                        State
+                    </th>
+                    <th>
+                        ZipCode
+                    </th>
+                    <th>
+                        Tel
                     </th>
                 </tr>  
             </thead>
@@ -20,7 +38,13 @@
                 <tr *ngFor='let user of users;'>
                     <td>{{user.user_ID}}</td>
                     <td>{{user.username}}</td>
+                    <td>{{user.firstName}}</td>
                     <td>{{user.email}}</td>
+                    <td>{{user.address}}</td>
+                    <td>{{user.city}}</td>
+                    <td>{{user.state}}</td>
+                    <td>{{user.zipCode}}</td>
+                    <td>{{user.phoneNumber}}</td>
                 </tr>
             </tbody>
         </table>
